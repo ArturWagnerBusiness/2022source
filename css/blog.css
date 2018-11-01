@@ -1,0 +1,27 @@
+.blog{
+	float: left;
+	height: auto;
+	width: 800px;
+
+}
+.blog .post{
+	/* top, bottom, center, back. First one on the top*/
+	background-image: url("../images/background_post_top.png"), url("../images/background_post_bottom.png"), url("../images/background_post_center.png"), url("../images/background_post_back.png");
+	background-position: top, bottom, center, left;
+    background-repeat: no-repeat, no-repeat, repeat, repeat;
+    padding: 1px 10px;
+
+}
+.blog .post .date{
+	text-align: right;
+	margin: 0px;
+	margin-top: 10px;
+}
+.blog .post .title{
+	font-size: 32px;
+	margin: 0px;
+}
+.blog .gap{
+	background: rgba(0, 0, 0, 0);
+	height: 20px;
+}
