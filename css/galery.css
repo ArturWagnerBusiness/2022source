@@ -1,17 +1,16 @@
-.galery{
+.gallery{
 	width: 1200px;
 	
 }
-.galery iframe{
-	border: 0px;
-	float: left;
-	width: 600px;
-	height: 305px;
-	padding-top: 15px;
+.gallery iframe{
 }
 .post {
+	border: 0px;
+	float: left;
+	padding-top: 15px;
 	width: 550px;
 	height: 300px;
+	margin-right: 50px;
 }
 .post .thumbnail{
 	background-image: url("../images/containers/galery/thumbnail.png");
@@ -52,6 +51,7 @@
 }
 .post .content .content p{
 	padding-left: 5px;
+	padding-right: 5px;
 }
 /* Footer */
 .post .content .footer{
