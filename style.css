@@ -1,0 +1,15 @@
+* {
+	padding: 0;
+    margin: 0;
+}
+body{
+	background: rgb(216, 213, 160);
+	background-image: url("../images/background_body.png");
+	background-position: top;
+	background-repeat: repeat-y;
+	margin: 0px;
+}
+.main_container{ 
+	width: 1200px;
+	margin: 0 auto;
+}

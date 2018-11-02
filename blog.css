@@ -1,0 +1,41 @@
+.blog{
+	float: left;
+	height: auto;
+	width: 800px;
+
+}
+.blog .post{
+	margin-top: 10px;
+}
+.blog .post .header{
+	background-image: url("../images/background_post_top.png");
+	background-position: top;
+	background-repeat: no-repeat;
+	height: 20px;
+
+}
+.blog .post .content{
+	background-image: url("../images/background_post_center.png");
+	background-position: center;
+	background-repeat: repeat;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.blog .post .header .date{
+	text-align: right;
+	padding-right: 5px;
+	padding-top: 5px;
+}
+.blog .post .content .title{
+	font-size: 32px;
+}
+.blog .post .content ul{
+	padding-left: 15px;
+}
+.blog .post .footer{
+	background-image: url("../images/background_post_bottom.png");
+	background-position: bottom;
+	background-repeat: no-repeat;
+	height: 20px;
+
+}
