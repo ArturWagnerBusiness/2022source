@@ -1,0 +1,50 @@
+.galery{
+	width: 1200px;
+	
+}
+.galery .post{
+	float: left;
+	width: 550px;
+	height: 300px;
+	margin-top: 15px;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+.galery .post .thumbnail{
+	float: left;
+	width: 250px;
+	height: 300px;
+}
+.galery .post .content{
+	float: right;
+	width: 300px;
+	height: 300px;
+}
+.galery .post .content .header{
+	background-image: url("../images/background_galery_post_top.png");
+	background-position: top;
+	background-repeat: no-repeat;
+	width: 300px;
+	height: 20px;
+}
+.galery .post .content .content{
+	background-image: url("../images/background_galery_post_center.png");
+	background-position: center;
+	background-repeat: repeat;
+	width: 300px;
+	height: 260px;
+}
+.galery .post .content .content .title{
+	font-size: 32px;
+}
+.galery .post .content .content p{
+	padding-left: 5px;
+}
+.galery .post .content .footer{
+	float: right;
+	background-image: url("../images/background_galery_post_bottom.png");
+	background-position: bottom;
+	background-repeat: no-repeat;
+	width: 300px;
+	height: 20px;
+}
