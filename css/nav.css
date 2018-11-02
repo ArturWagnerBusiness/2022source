@@ -1,5 +1,5 @@
 nav{
-	background-image: url("../images/background_nav.png");
+	background-image: url("../images/nav/background_nav.png");
 	height: 50px;
 }
 nav ul{
@@ -19,7 +19,7 @@ nav ul li p{
 }
 
 nav ul a .hover{
-	background-image: url("../images/background_nav_item.png");
+	background-image: url("../images/nav/background_nav_item.png");
 	width: 100px;
 	height: 47px;
 }

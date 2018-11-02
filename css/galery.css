@@ -2,49 +2,66 @@
 	width: 1200px;
 	
 }
-.galery .post{
+.galery iframe{
+	border: 0px;
 	float: left;
+	width: 600px;
+	height: 305px;
+	padding-top: 15px;
+}
+.post {
 	width: 550px;
 	height: 300px;
-	margin-top: 15px;
-	margin-left: 25px;
-	margin-right: 25px;
 }
-.galery .post .thumbnail{
+.post .thumbnail{
+	background-image: url("../images/containers/galery/thumbnail.png");
+	background-position: center;
+	background-repeat: repeat;
 	float: left;
 	width: 250px;
 	height: 300px;
 }
-.galery .post .content{
+.post .thumbnail img{
+	display: block;
+	margin: auto;
+}
+.post .content{
 	float: right;
 	width: 300px;
 	height: 300px;
 }
-.galery .post .content .header{
-	background-image: url("../images/background_galery_post_top.png");
+
+/* Header */
+.post .content .header{
+	background-image: url("../images/containers/galery/post_top.png");
 	background-position: top;
 	background-repeat: no-repeat;
 	width: 300px;
 	height: 20px;
 }
-.galery .post .content .content{
-	background-image: url("../images/background_galery_post_center.png");
+/* Content */
+.post .content .content{
+	background-image: url("../images/containers/galery/post_center.png");
 	background-position: center;
 	background-repeat: repeat;
 	width: 300px;
 	height: 260px;
 }
-.galery .post .content .content .title{
+.post .content .content .title{
 	font-size: 32px;
 }
-.galery .post .content .content p{
+.post .content .content p{
 	padding-left: 5px;
 }
-.galery .post .content .footer{
+/* Footer */
+.post .content .footer{
 	float: right;
-	background-image: url("../images/background_galery_post_bottom.png");
+	background-image: url("../images/containers/galery/post_bottom.png");
 	background-position: bottom;
 	background-repeat: no-repeat;
 	width: 300px;
 	height: 20px;
+}
+.post .content .footer p{
+	padding-left: 5px;
 }

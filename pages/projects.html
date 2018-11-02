@@ -25,45 +25,18 @@
 				</ul>
 			</nav>
 			<div class="galery">
-				<div class="post">
-                	<div class="thumbnail">
-                    	<img height="300" width="250" src="">
-                    </div>
-                    <div class="content">
-                		<div class="header"></div>
-                    	<div class="content">
-                        	<p class="title">Project 3</p>
-                            <p>Text</p>
-                        </div>
-                        <div class="footer"></div>
-                    </div>
-                </div>
-				<div class="post">
-                	<div class="thumbnail">
-                    	<img height="300px" width="250px" src="">
-                    </div>
-                    <div class="content">
-                		<div class="header"></div>
-                    	<div class="content">
-                        	<p class="title">Project 3</p>
-                            <p>Text</p>
-                        </div>
-                        <div class="footer"></div>
-                    </div>
-                </div>
-				<div class="post">
-                	<div class="thumbnail">
-                    	<img height="300px" width="250px" src="">
-                    </div>
-                    <div class="content">
-                		<div class="header"></div>
-                    	<div class="content">
-                        	<p class="title">Project 3</p>
-                            <p>Text</p>
-                        </div>
-                        <div class="footer"></div>
-                    </div>
-                </div>
+				<script type="text/javascript">
+getTxt = function (){
+
+  $.ajax({
+    url:'../projects/1/index.html',
+    success: function (data){
+      alert(self)
+    }
+  });
+}
+				</script>
+				<button type="button" id="btnGetTxt" onclick="getTxt()">Get Text</button>
 			</div>
 		</div>
 	</body>

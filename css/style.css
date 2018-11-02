@@ -4,7 +4,7 @@
 }
 body{
 	background: rgb(216, 213, 160);
-	background-image: url("../images/background_body.png");
+	background-image: url("../images/common/background_body.png");
 	background-position: top;
 	background-repeat: repeat-y;
 	margin: 0px;
