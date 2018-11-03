@@ -3,21 +3,31 @@
     padding: 0;
     list-style-type: none;
 }
+.clear{
+    display: flex;
+    flex-direction: column;
+    
+}
 body{
     background-color: rgb(100, 100, 100)
     
 }
 #banner{
-    background-image: url("../../articles/2018/11/2/1/images/header.jpg");
+    background-image: url("../../articles/2018/11/4/1/images/header.jpg");
     height: 400px;
 }
-#wrapper{
+body #wrapper{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
     background-color: rgb(240, 240, 240);
     border: 1px solid none;
     border-radius: 10px;
     width: 1000px;
     margin: 20px auto;
     padding: 10px;
+    height: auto;
+    
 }
 nav ul{
     padding-top: 10px;
@@ -44,12 +54,15 @@ nav ul li .nav-selected{
 
 #container{
     width: 1000px;
-    height: 525px;
 }
 #main-col{
-    float: left;
     width: 750px;
     height: 200px;
+    float: left;
+    height: inherit;
+}
+#main-col #content{
+    height: inherit;
 }
 #main-col #content article{
     background-color: rgb(255, 255, 255);
@@ -57,20 +70,67 @@ nav ul li .nav-selected{
     border-radius: 10px;
     margin-bottom: 15px;
     margin-top: 15px;
+    padding: 15px;
     width: 750px;
-    height: 200px;
+    height: inherit;
 }
 #side-col{
+    position: relative;
     background-color: rgb(255, 255, 255);
     border: 1px solid rgb(200, 200, 200);
     border-radius: 10px;
     margin-bottom: 15px;
     margin-top: 15px;
-    width: 225px;
+    width: 200px;
     height: 500px;
     float: right;
 }
 footer{
     margin-bottom: 50px;
-    
+}
+article header{
+    height: 70px;
+    border-bottom: 1px dotted rgb(200, 200, 200);
+    float: none;
+}
+article header .date{
+    background: linear-gradient(rgb(229, 229, 229), rgb(172, 172, 172));
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 10px;
+    height: 55px;
+    width: 55px;
+    float: left;
+    text-align: center;
+}
+article header .date .month{
+    font-size: 12px;
+}
+article header .date .day{
+    font-size: 24px;
+}
+article header .date .year{
+    font-size: 10px;
+}
+article header .title{
+    font-size: 22px;
+    padding-left: 65px;
+}
+article .content .title{
+    font-size: 22px;
+}
+article .content{
+    height: inherit;
+}
+article .content *{
+    padding-top: 10px;
+}
+.bold {
+    font-weight: bold;
+}
+.italic {
+    font-style: italic;
+}
+button {
+    width: 780px;
+    height: 40px;
 }

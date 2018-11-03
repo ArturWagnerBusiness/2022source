@@ -1,90 +1,36 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8" />
-		<title>Home page</title>
-
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" type="text/css" href="css/nav.css">
-		<link rel="stylesheet" type="text/css" href="css/blog.css">
-		<link rel="stylesheet" type="text/css" href="css/twitter.css">
-
+        <meta charset="urf-8">
+		<title>Artur Wagner's website</title>
+        <link rel="stylesheet" type="text/css" href="/resources/css/styles/dark-theme.css">
+        
+        <!-- List of post is loaded from newest to oldest, var articleList --> 
+        <script src="/resources/articles/list.js"></script>
+        <script src="/resources/js/jquery.js"></script>
+        <script src="/resources/js/articleAdd.js"></script>
 	</head>
 	<body>
-		<div class="main_container">
-
-			<nav>
-				<ul>
-					<li><p>Home</p></li>
-					<a href="pages/projects.html"><li><p>Projects</p></li></a>
-					<a href="pages/aboutme.html"><li><p>About me</p></li></a>
-					<li><p>Contact me</p></li>
-					<li><p>Find me</p></li>
-				</ul>
-			</nav>
-			<div class="blog">
-
-
-
-				<div class="post">
-					<div class="header">
-						<p class="date">Pinned</p>
-					</div>
-					<div class="content">
-						<p class="title">Welcome to my website</p>
-						<p>
-							Well, this is a working in progress site by Artur Wagner<br />
-							The site for now has 1 project and a twitter that you can see on the right.<br />
-							Things related to a website will be seen in posts bellow this one and things relating me and my personal life will be see in twitter which you get to see on the right.<br />
-							<br />
-							You can visit my github page if you want to contact me:<br />
-							> <a href="https://github.com/Eis3">github.com/Eis3</a>
-						</p>
-					</div>
-					<div class="footer"></div>
-				</div>
-
-
-
-				<div class="post">
-					<div class="header">
-						<p class="date">2st November 2018</p>
-					</div>
-					<div class="content">
-						<p class="title">Site has projects :o</p>
-						<p>
-							I had some free time today so I decided to add an image once you hover over. I was also able to make Projects work now. You can check one of my projects and see what I have done. It took me few hours as I simply wanted to make the adding process quick and simple. Well also more information was added as well.<br />
-							See you soon as the site grows!
-						</p>
-					</div>
-					<div class="footer"></div>
-				</div>
-
-
-
-				<div class="post">
-					<div class="header">
-						<p class="date">1st November 2018</p>
-					</div>
-					<div class="content">
-						<p class="title">Site Initiation</p>
-						<p>
-							I just felt like making a site and went with it.<br />
-							Will start using it for my personal and school projects.<br />
-							Spended like 6h on it
-						</p>
-					</div>
-					<div class="footer"></div>
-				</div>
-
-
-
+		<div id="wrapper">
+			<div id="header-container">
+				<dir id="banner"></dir>
+				<nav>
+					<ul>
+						<li><a class="nav-selected" href="/index.html">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Store</a></li>
+                    </ul>
+				</nav>
 			</div>
-			<div class="twitter">
-				<a class="twitter-timeline" href="https://twitter.com/ArturWagner15?ref_src=twsrc%5Etfw">Tweets by ArturWagner15</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			<div id="container">
+				<div id="main-col">
+					<div id="content"></div>
+                    <button id="load-post" onclick="articleLoad()">Click me to load more!</button>
+				</div>
+				<div id="side-col"></div>
 			</div>
+			<footer></footer>
 		</div>
-    	<script src="js/jquery.js"></script>
-    	<script src="js/nav.js"></script>
+        <script>articleLoad();</script>
 	</body>
 </html>
