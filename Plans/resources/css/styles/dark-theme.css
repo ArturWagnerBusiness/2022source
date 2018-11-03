@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+body{
+    background-color: rgb(100, 100, 100)
+    
+}
+#banner{
+    background-image: url("../../articles/2018/11/2/1/images/header.jpg");
+    height: 400px;
+}
+#wrapper{
+    background-color: rgb(240, 240, 240);
+    border: 1px solid none;
+    border-radius: 10px;
+    width: 1000px;
+    margin: 20px auto;
+    padding: 10px;
+}
+nav ul{
+    padding-top: 10px;
+    border-bottom: 1px solid rgb(200, 200, 200);
+    height: 39px;
+}
+nav ul li a{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-decoration: none;
+    float: left;
+    margin-right: 10px;
+    padding: 10px;
+    border-top: 1px solid rgb(200, 200, 200);
+    border-left: 1px solid rgb(200, 200, 200);
+    border-right: 1px solid rgb(200, 200, 200);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+nav ul li .nav-selected{
+    background: linear-gradient(rgb(229, 229, 229), rgb(172, 172, 172));
+}
+
+#container{
+    width: 1000px;
+    height: 525px;
+}
+#main-col{
+    float: left;
+    width: 750px;
+    height: 200px;
+}
+#main-col #content article{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    width: 750px;
+    height: 200px;
+}
+#side-col{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    width: 225px;
+    height: 500px;
+    float: right;
+}
+footer{
+    margin-bottom: 50px;
+    
+}
