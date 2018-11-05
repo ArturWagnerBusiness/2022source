@@ -1,7 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    color: darkgray;
+}
+a:visited { 
+    color: darkgray;
 }
 .clear{
     display: flex;
@@ -13,7 +19,7 @@ body{
     
 }
 #banner{
-    background-image: url("../../articles/2018/11/3/1/images/header.jpg");
+    background-image: url("/resources/articles/2018/11/3/1/images/header.jpg");
     height: 400px;
 }
 body #wrapper{
@@ -33,6 +39,7 @@ nav ul{
     padding-top: 10px;
     border-bottom: 1px solid rgb(200, 200, 200);
     height: 39px;
+    list-style-type: none;
 }
 nav ul li a{
     background-color: rgb(255, 255, 255);
@@ -47,21 +54,26 @@ nav ul li a{
     border-right: 1px solid rgb(200, 200, 200);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+}nav ul li a:visited{
+    color: rgb(0, 0, 0);
 }
 nav ul li .nav-selected{
     background: linear-gradient(rgb(229, 229, 229), rgb(172, 172, 172));
 }
-
+nav ul .nav-hover a{
+    background: linear-gradient(rgb(229, 229, 229), rgb(172, 172, 172));
+}
 #container{
     width: 1000px;
 }
 #main-col{
-    width: 750px;
+    width: 782px;
     height: 200px;
     float: left;
     height: inherit;
 }
 #main-col #content{
+    width: inherit;
     height: inherit;
 }
 #main-col #content article{
@@ -84,6 +96,12 @@ nav ul li .nav-selected{
     width: 200px;
     height: 500px;
     float: right;
+}
+#side-col .date{
+    text-align: center;
+}
+#side-col .time{
+    text-align: center;
 }
 footer{
     margin-bottom: 50px;
@@ -115,8 +133,12 @@ article header .title{
     font-size: 22px;
     padding-left: 65px;
 }
+article .content p{
+    font-size: 18px;
+}
 article .content .title{
-    font-size: 22px;
+    font-size: 26px;
+    font-weight: bold;
 }
 article .content{
     height: inherit;
@@ -124,11 +146,24 @@ article .content{
 article .content *{
     padding-top: 10px;
 }
+article .content ul {
+    padding-top: 0px;
+    padding-left: 20px;
+}
+article .content ul li {
+    padding-top: 0px;
+}
 .bold {
     font-weight: bold;
 }
+.not-bold {
+    font-weight: normal;
+}
 .italic {
     font-style: italic;
+}
+.not-italic {
+    font-style: normal;
 }
 button {
     width: 780px;

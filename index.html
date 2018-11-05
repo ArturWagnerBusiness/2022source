@@ -3,12 +3,15 @@
 	<head>
         <meta charset="urf-8">
 		<title>Artur Wagner's website</title>
-        <link rel="stylesheet" type="text/css" href="/resources/css/styles/dark-theme.css">
-        
-        <!-- List of post is loaded from newest to oldest, var articleList --> 
-        <script src="/resources/articles/list.js"></script>
+        <link rel="stylesheet" type="text/css" href="/resources/css/styles/dark-theme.css"> 
         <script src="/resources/js/jquery.js"></script>
+        
+        <!-- List of post is loaded from newest to oldest, var articleList -->
+        <script src="/resources/articles/list.js"></script>
+        
         <script src="/resources/js/articleAdd.js"></script>
+        <script src="/resources/js/nav-hover.js"></script>
+        <script src="/resources/js/sidebar-date.js"></script>
 	</head>
 	<body>
 		<div id="wrapper">
@@ -27,10 +30,17 @@
 					<div id="content"></div>
                     <button id="load-post" onclick="articleLoad()">Click me to load more!</button>
 				</div>
-				<div id="side-col"></div>
+				<div id="side-col">
+                    <p class="date">Loading...</p>
+                    <p class="time">Loading...</p>
+                </div>
 			</div>
 			<footer></footer>
 		</div>
+        <!-- Functions are run -->
         <script>articleLoad();</script>
+        <script>
+            addDate();
+            window.setInterval(function(){addDate()}, 1000);</script>
 	</body>
 </html>

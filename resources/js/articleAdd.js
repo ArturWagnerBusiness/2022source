@@ -4,7 +4,7 @@ function artilceAdd(link){
 };
 function articleLoad(){
     postnumber = postnumber + 5;
-    for (var i = 1; i <= 5; i++) {
-        artilceAdd(articleList["post" + (i + postnumber)]);
+    for (var i = 0; i <= 4; i++) {
+        artilceAdd(articleList[(i + postnumber)]);
     };
 }
