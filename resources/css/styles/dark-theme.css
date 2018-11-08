@@ -15,11 +15,13 @@ a:visited {
     
 }
 body{
-    background-color: rgb(100, 100, 100)
+    background-color: rgb(100, 100, 100);
+    background-image: url("/resources/articles/2018/11/8/1/images/background.png");
+    background-repeat: repeat;
     
 }
-#banner{
-    background-image: url("/resources/articles/2018/11/3/1/images/header.jpg");
+#hero{
+    background-image: url("/resources/articles/2018/11/8/1/images/header.png");
     height: 400px;
 }
 body #wrapper{
@@ -34,6 +36,9 @@ body #wrapper{
     padding: 10px;
     height: auto;
     
+}
+nav {
+	z-index: 1
 }
 nav ul{
     padding-top: 10px;
@@ -152,6 +157,14 @@ article .content ul {
 }
 article .content ul li {
     padding-top: 0px;
+}
+article .footer {
+    margin-top: 5px;
+    border-top: 1px dotted rgb(200, 200, 200);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    font-style: italic;
 }
 .bold {
     font-weight: bold;
