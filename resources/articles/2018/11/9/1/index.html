@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="urf-8">
+		<title>Post</title>
+        <link rel="stylesheet" type="text/css" href="/resources/css/styles/dark-theme.css"> 
+        <script src="/resources/js/jquery.js"></script>
+        
+        <!-- List of post is loaded from newest to oldest, var articleList -->
+        <script src="/resources/js/articleAdd.js"></script>
+        <script src="/resources/js/nav-hover.js"></script>
+        <script src="/resources/js/sidebar-date.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header-container">
+				<dir id="hero"></dir>
+				<nav>
+					<ul>
+						<li><a href="/index.html">Home</a></li>
+						<li><a href="https://eis3.github.io/school-website/index.html">Old site</a></li>
+						<li><a href="#">More comming soon!</a></li>
+                    </ul>
+				</nav>
+			</div>
+			<div id="container">
+				<div id="main-col">
+					<div id="content">
+						<article>
+							<header>
+						        <div class="date">
+						            <p class="month">Nov</p>
+						            <p class="day">9</p>
+						            <p class="year">2018</p>
+						        </div>
+						        <div class="title">Lot and lot of imporovements! There are cool things that are out this update and more is coming!</div>
+						    </header>
+						    <div class="content">
+						        <p class="title">So what is this clock?</p>
+						        <p>Well the clock is simply 3 items which one of the is a div that contains the other 2 images. The div has a background of a clock where the 2 other images are the arrows.</p>
+                                <p>Hour arrow is rotated at (Hour / 12)*360 and the 12 is replaced with 60 for the minute arrow. This is to get the percentage of the full cycle and then transform it into the degree. The image then gets their transform class edited with the corresponding degree.</p>
+						        <p class="title">Html file now has "en" set as a language.</p>
+						        <p>Nothing much. Just added lang="en" in the html tag. This is so that other applications can check the langue. For exaple for translation reasons. It may also be used to make sure that non-english users will not get this site but an site corresponding their language. (Which I may plan to add later :D) </p>
+						        <p class="title">Footer bringed you here!</p>
+						        <p>Like said in the small post, you now see that posts can have their own detailed page. Which I will possibly not use as I may not have time to type in all the changes. However if time is in my hands then I might add a page for a post.</p>
+						    </div>
+						    <div class="footer"></div>
+						</article>
+					</div>
+				</div>
+				<div id="side-col">
+                    <p class="date">Loading...</p>
+                    <p class="time">Loading...</p>
+                </div>
+			</div>
+			<footer></footer>
+		</div>
+        <!-- Functions are run -->
+        <script>
+            addDate();
+            window.setInterval(function(){addDate()}, 1000);</script>
+	</body>
+</html>
