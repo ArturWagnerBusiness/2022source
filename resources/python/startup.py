@@ -152,6 +152,7 @@ def makePost():
             args = readText(itemData[2]).split("\n")
             container = readText(itemData[1])
             containerType = "invalid"
+            imageWidth = "750px"
             for line in args:
                 if line == "":
                     continue
@@ -161,6 +162,12 @@ def makePost():
                     containerType = "title"
                 elif line == "-p":
                     containerType = "p"
+                elif line.startwith("width "):
+                    imageWidth = line.strip("width ")
+                    try:
+                        imageWidth = imageWidth.strip("\n")
+                    except:
+                        pass
                 else:
                     console("Wrong parameters in " + str(itemID))
 
@@ -173,7 +180,7 @@ def makePost():
                 postHtml.write('        <p>{}</p>\n'.format(container))
             elif containerType == "img":
                 copyfile(container, dirImg + "\\" + getFilename(container))
-                postHtml.write('        <img style="max-width: 750px;" src="/resources/articles/' + projectSettings["timePath"] + "/" + projectSettings["version"] + '/images/{}">\n'.format(getFilename(container)))
+                postHtml.write('        <img style="max-width: {};" src="/resources/articles/'.format(imageWidth) + projectSettings["timePath"] + "/" + projectSettings["version"] + '/images/{}">\n'.format(getFilename(container)))
             itemID += 1
         postHtml.write('    </div>\n'
                        '    <div class="footer">Posted using Auto-post python program</div>\n')
@@ -188,6 +195,7 @@ def makePost():
         listJs.writelines(listJsFile)
 
 def getFilename(path):
+    filename = ""
     for item in path.split("\\"):
         try:
             item.strip("\n")
@@ -211,7 +219,8 @@ tk.Label(infoCol, text="Possible arguments:\n\n"
                        "-img -title -paragraph\n\n\n"
                        "[-img]\n"
                        "The text box is to put the image url\n"
-                       "E.G.: C:\\Directory\\img.png\n\n\n"
+                       "E.G.: C:\\Directory\\img.png\n"
+                       "width XXXpx, can be added\n\n\n"
                        "[-title] or [-p]\n"
                        "The text box is to write down your text\nyou will want to display.\n\n"
                        "Remember that <ENTER> will be\nreplaced with<br /> to correspond\nwith making a new line\n"
