@@ -168,12 +168,12 @@ def makePost():
             if containerType == "invalid":
                 continue
             elif containerType == "title":
-                postHtml.write('        <p class="title">{}</p>'.format(container))
+                postHtml.write('        <p class="title">{}</p>\n'.format(container))
             elif containerType == "p":
-                postHtml.write('        <p>{}</p>'.format(container))
+                postHtml.write('        <p>{}</p>\n'.format(container))
             elif containerType == "img":
                 copyfile(container, dirImg + "\\" + getFilename(container))
-                postHtml.write('        <img style="max-width: 750px;" src="/resources/articles/' + projectSettings["timePath"] + "/" + projectSettings["version"] + '/images/{}">'.format(getFilename(container)))
+                postHtml.write('        <img style="max-width: 750px;" src="/resources/articles/' + projectSettings["timePath"] + "/" + projectSettings["version"] + '/images/{}">\n'.format(getFilename(container)))
             itemID += 1
         postHtml.write('    </div>\n'
                        '    <div class="footer">Posted using Auto-post python program</div>\n')
@@ -182,6 +182,9 @@ def makePost():
         for line in listJs:
             listJsFile.append(line)
         listJsFile[0] += '    "{}/{}/{}/{}",\n'.format(projectSettings["yearNow"], projectSettings["monthNowNumber"], projectSettings["dayNow"], projectSettings["version"])
+    with open(homePath + "resources\\articles\\list.js", "w") as listJs:
+        pass
+    with open(homePath + "resources\\articles\\list.js", "r+") as listJs:
         listJs.writelines(listJsFile)
 
 def getFilename(path):
