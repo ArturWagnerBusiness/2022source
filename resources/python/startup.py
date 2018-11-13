@@ -132,6 +132,10 @@ def makePost():
         console("Making the file")
         title = readText(postTitle)
 
+        try:
+            title = title.replace("\n", "<br />")
+        except:
+            pass
         postHtml.write('    <header>\n'
                        '        <div class="date">\n'
                        '            <p class="month">{}</p>\n'
@@ -151,6 +155,10 @@ def makePost():
             itemData = moduleList["module"+str(itemID)]
             args = readText(itemData[2]).split("\n")
             container = readText(itemData[1])
+            try:
+                container = container.replace("\n", "<br />")
+            except:
+                pass
             containerType = "invalid"
             imageWidth = "750px"
             for line in args:
