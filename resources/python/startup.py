@@ -2,6 +2,7 @@ import tkinter as tk
 import time
 from os import path
 from os import makedirs
+from shutil import copyfile
 """
 from tkinter import *
 import time,random
@@ -53,13 +54,13 @@ projectSettings = {
 }
 x = 1
 while True:
-    versionExists = path.isdir(homePath + "resources\\articles\\{}\\{}\\{}\\".format(
+    versionExists = homePath + "resources\\articles\\{}\\{}\\{}\\".format(
         projectSettings["yearNow"],
-        projectSettings["monthNow"],
+        projectSettings["monthNowNumber"],
         projectSettings["dayNow"]
         ) + str(x)
-    )
-    if not versionExists:
+    print(versionExists)
+    if not path.isdir(versionExists):
         projectSettings["version"] = str(x)
         break
     x += 1
@@ -96,7 +97,7 @@ def submitPage():
         args = readText(itemData[2]).split("\n")
         container = readText(itemData[1])
         for line in args:
-            if line in ["", "-img", "-title", "-paragraph"]:
+            if line in ["", "-img", "-title", "-p"]:
                 pass
             else:
                 valid = False
@@ -110,9 +111,13 @@ def makePost():
     for xpath in (homePath + "resources\\articles\\" + projectSettings["yearNow"],
                   homePath + "resources\\articles\\" + projectSettings["yearNow"] + "\\" + projectSettings["monthNowNumber"],
                   homePath + "resources\\articles\\" + projectSettings["timePath"].replace("/", "\\", 3),
-                  homePath + "resources\\articles\\" + projectSettings["timePath"].replace("/", "\\", 3) + "\\" + projectSettings["version"]):
+                  homePath + "resources\\articles\\" + projectSettings["timePath"].replace("/", "\\", 3) + "\\" +
+                  projectSettings["version"]):
         if not path.isdir(xpath):
             makedirs(xpath)
+    dirImg = homePath + "resources\\articles\\" + projectSettings["timePath"].replace("/", "\\", 3) + "\\" + projectSettings["version"] + "\\" + "images"
+    makedirs(dirImg)
+
     # Creating post.html
     console("Creating the post.html")
     if path.exists(homePath + "resources\\articles\\" + projectSettings["timePath"].replace("/", "\\", 3) + "\\" + projectSettings["version"] + "\\" + "post.html"):
@@ -123,23 +128,30 @@ def makePost():
 
     with open(postHtmlPath + "\\" + "post.html", "a") as postHtml:
 
-        # Adding time and title
+        # Adding time and title in the <header>
         console("Making the file")
         title = readText(postTitle)
-        console("Title> " + title)
-        console("Time> " + projectSettings["timePath"])
 
+        postHtml.write('    <header>\n'
+                       '        <div class="date">\n'
+                       '            <p class="month">{}</p>\n'
+                       '            <p class="day">{}</p>\n'
+                       '            <p class="year">{}</p>\n'
+                       '        </div>\n'
+                       '        <div class="title">{}</div>\n'
+                       '    </header>\n'.format(projectSettings["monthNow"], projectSettings["dayNow"], projectSettings["yearNow"], title))
         # Post creation
         loop = 0
         for itemID in moduleList:
             loop += 1
         print(loop)
         itemID = 0
+        postHtml.write('    <div class="content">\n')
         while itemID < loop:
             itemData = moduleList["module"+str(itemID)]
             args = readText(itemData[2]).split("\n")
             container = readText(itemData[1])
-            containerType = "p"
+            containerType = "invalid"
             for line in args:
                 if line == "":
                     continue
@@ -147,14 +159,39 @@ def makePost():
                     containerType = "img"
                 elif line == "-title":
                     containerType = "title"
-                elif line == "-paragraph":
+                elif line == "-p":
                     containerType = "p"
                 else:
                     console("Wrong parameters in " + str(itemID))
+
             console(containerType + "> " + container)
+            if containerType == "invalid":
+                continue
+            elif containerType == "title":
+                postHtml.write('        <p class="title">{}</p>'.format(container))
+            elif containerType == "p":
+                postHtml.write('        <p>{}</p>'.format(container))
+            elif containerType == "img":
+                copyfile(container, dirImg + "\\" + getFilename(container))
+                postHtml.write('        <img style="max-width: 750px;" src="/resources/articles/' + projectSettings["timePath"] + "/" + projectSettings["version"] + '/images/{}">'.format(getFilename(container)))
             itemID += 1
+        postHtml.write('    </div>\n'
+                       '    <div class="footer">Posted using Auto-post python program</div>\n')
+    with open(homePath + "resources\\articles\\list.js", "r+") as listJs:
+        listJsFile = []
+        for line in listJs:
+            listJsFile.append(line)
+        listJsFile[0] += '    "{}/{}/{}/{}",\n'.format(projectSettings["yearNow"], projectSettings["monthNowNumber"], projectSettings["dayNow"], projectSettings["version"])
+        listJs.writelines(listJsFile)
 
-
+def getFilename(path):
+    for item in path.split("\\"):
+        try:
+            item.strip("\n")
+        except:
+            pass
+        filename = item
+    return filename
 
 standardWidth = 34
 editorDisplay = "Editor v." + projectSettings["version"] + " (" + projectSettings["dayNow"] + " " + projectSettings["monthNow"] + " " + projectSettings["yearNow"] + ")"
@@ -172,7 +209,7 @@ tk.Label(infoCol, text="Possible arguments:\n\n"
                        "[-img]\n"
                        "The text box is to put the image url\n"
                        "E.G.: C:\\Directory\\img.png\n\n\n"
-                       "[-title] or [-paragraph]\n"
+                       "[-title] or [-p]\n"
                        "The text box is to write down your text\nyou will want to display.\n\n"
                        "Remember that <ENTER> will be\nreplaced with<br /> to correspond\nwith making a new line\n"
                        "", width=30, height=32).grid(row=2, column=0)
