@@ -97,7 +97,7 @@ def submitPage():
         args = readText(itemData[2]).split("\n")
         container = readText(itemData[1])
         for line in args:
-            if line in ["", "-img", "-title", "-p"]:
+            if line in ["", "-img", "-title", "-p", "-raw"]:
                 pass
             else:
                 valid = False
@@ -170,6 +170,8 @@ def makePost():
                     containerType = "title"
                 elif line == "-p":
                     containerType = "p"
+                elif line == "-raw":
+                    containerType = "raw"
                 elif line.startwith("width "):
                     imageWidth = line.strip("width ")
                     try:
@@ -189,6 +191,8 @@ def makePost():
             elif containerType == "img":
                 copyfile(container, dirImg + "\\" + getFilename(container))
                 postHtml.write('        <img style="max-width: {};" src="/resources/articles/'.format(imageWidth) + projectSettings["timePath"] + "/" + projectSettings["version"] + '/images/{}">\n'.format(getFilename(container)))
+            elif containerType == "raw":
+                postHtml.write('        {}\n'.format(container))
             itemID += 1
         postHtml.write('    </div>\n'
                        '    <div class="footer">Posted using Auto-post python program</div>\n')
@@ -224,15 +228,17 @@ postTitle.grid(row=1, column=0)
 
 tk.Label(infoCol, text="Post Title:", width=standardWidth).grid(row=0, column=0)
 tk.Label(infoCol, text="Possible arguments:\n\n"
-                       "-img -title -paragraph\n\n\n"
+                       "-img -title -paragraph -raw\n\n\n"
                        "[-img]\n"
                        "The text box is to put the image url\n"
                        "E.G.: C:\\Directory\\img.png\n"
                        "width XXXpx, can be added\n\n\n"
                        "[-title] or [-p]\n"
                        "The text box is to write down your text\nyou will want to display.\n\n"
-                       "Remember that <ENTER> will be\nreplaced with<br /> to correspond\nwith making a new line\n"
-                       "", width=30, height=32).grid(row=2, column=0)
+                       "Remember that <ENTER> will be\nreplaced with<br /> to correspond\nwith making a new line\n\n\n"
+                       "[-raw]\n"
+                       "Prints the exact content from\n"
+                       "the content box.", width=30, height=32).grid(row=2, column=0)
 tk.Button(infoCol, text="Add new Module", width=standardWidth, command=addModule, height=3).grid(row=99, column=0)
 tk.Button(infoCol, text="Submit", width=standardWidth, command=submitPage, height=3).grid(row=100, column=0)
 
