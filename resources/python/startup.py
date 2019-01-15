@@ -71,6 +71,7 @@ variableList = {
 
 }
 
+
 def addModule():
     mid = 0
     while True:
@@ -84,6 +85,7 @@ def addModule():
     print(moduleList)
     moduleList["module" + str(mid)][1].grid(row=mid + 1, column=0)
     moduleList["module" + str(mid)][2].grid(row=mid+1, column=0)
+
 
 def readText(text):
     return text.get("1.0", 'end-1c')
@@ -104,6 +106,8 @@ def submitPage():
                 console("Wrong parameters in module " + str(int(itemID.strip("module"))+1))
     if valid:
         makePost()
+
+
 def makePost():
     # Making dir
     console("Making a directory...")
