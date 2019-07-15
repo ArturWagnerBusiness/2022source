@@ -20,7 +20,7 @@ bounce()
 root.mainloop()
 """
 
-homePath = "C:\\Users\\Artur\\Documents\\GitHub\\eis3.github.io\\"
+homePath = "C:\\Users\\Artur\\Documents\\GitHub\\arturwagnerbusiness.github.io\\"
 root = tk.Tk()
 root.geometry("1500x900")
 

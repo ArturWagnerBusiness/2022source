@@ -181,7 +181,16 @@ article .footer {
 .not-italic {
     font-style: normal;
 }
-button {
+#load-post {
     width: 780px;
     height: 40px;
+}
+.new-app {
+    padding: 10px;
+    text-align: center;
+}
+.new-app button {
+    width: 80px;
+    padding: 5px;
+    margin: 5px;
 }

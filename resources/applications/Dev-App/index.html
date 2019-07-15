@@ -7,9 +7,7 @@
         <script src="/resources/js/jquery.js"></script>
         
         <!-- List of post is loaded from newest to oldest, var articleList -->
-        <script src="/resources/articles/list.js"></script>
         
-        <script src="/resources/js/articleAdd.js"></script>
         <script src="/resources/js/nav-hover.js"></script>
         <script src="/resources/js/sidebar-date.js"></script>
 	</head>
@@ -19,18 +17,42 @@
 				<dir id="hero"></dir>
 				<nav>
 					<ul>
-						<li><a class="nav-selected" href="/index.html">Home</a></li>
+						<li><a href="/index.html">Home</a></li>
 						<li><a href="https://github.com/ArturWagnerBusiness">Github</a></li>
 						<li><a href="https://twitter.com/ArturWagner15">Twitter</a></li>
 						<li><a href="https://www.youtube.com/channel/UCmtVoC0nyojWcpXMGxJ5RIQ">Youtube</a></li>
-						<li><a href="/resources/applications/Dev-App/index.html">Dev App</a></li>
+						<li><a class="nav-selected" href="/resources/applications/Dev-App/index.html">Dev App</a></li>
                     </ul>
 				</nav>
 			</div>
 			<div id="container">
 				<div id="main-col">
-					<div id="content"></div>
-                    <button id="load-post" onclick="articleLoad()">Click me to load more!</button>
+					<div id="content">
+						<article>
+							<header>
+								<div class="date">
+									<p class="month">Jul</p>
+									<p class="day">15</p>
+									<p class="year">2019</p>
+								</div>
+								<div class="title">CMD Editor is not 100% usable!</div>
+							</header>
+							<div class="content">
+								<p class="title">App is still in high developement and it can't be called useble as of now.</p>
+								<p>If you want to see what stage the app is then click the button bellow for a download</p>
+								<a href="https://github.com/ArturWagnerBusiness/Dev-App">
+									<button style="
+									padding: 5px;
+									width: 150px;
+									height: 50px;
+									font-size: 26px;
+									margin: 10px;
+									">Download</button>
+								</a>
+							</div>
+							<div class="footer">App is still in developement</div>	
+						</article>
+					</div>
 				</div>
 				<div id="side-col">
                     <div class="time">
@@ -55,7 +77,6 @@
 			</footer>
 		</div>
         <!-- Functions are run -->
-        <script>articleLoad();</script>
         <script>
             addDate();
             window.setInterval(function(){addDate()}, 100);</script>
