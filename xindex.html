@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="urf-8">
+		<title>Artur Wagner's website</title>
+        <link rel="stylesheet" type="text/css" href="/resources/css/styles/dark-theme.css"> 
+        <script src="/resources/js/jquery.js"></script>
+        
+        <!-- List of post is loaded from newest to oldest, var articleList -->
+        <script src="/resources/articles/list.js"></script>
+        
+        <script src="/resources/js/articleAdd.js"></script>
+        <script src="/resources/js/nav-hover.js"></script>
+        <script src="/resources/js/sidebar-date.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header-container">
+				<dir id="hero"></dir>
+				<nav>
+					<ul>
+						<li><a class="nav-selected" href="/index.html">Home</a></li>
+						<li><a href="https://github.com/ArturWagnerBusiness">Github</a></li>
+						<li><a href="https://twitter.com/ArturWagner15">Twitter</a></li>
+						<li><a href="https://www.youtube.com/channel/UCmtVoC0nyojWcpXMGxJ5RIQ">Youtube</a></li>
+						<li><a href="/resources/applications/Dev-App/index.html">Dev App</a></li>
+                    </ul>
+				</nav>
+			</div>
+			<div id="container">
+				<div id="main-col">
+					<div id="content"></div>
+                    <button id="load-post" onclick="articleLoad()">Click me to load more!</button>
+				</div>
+				<div id="side-col">
+                    <div class="time">
+                        <img class="hour" src="/resources/articles/2018/11/9/1/images/hour-arrow.png" style="position: absolute; left: 15px;">
+                        <img class="minute" src="/resources/articles/2018/11/9/1/images/minute-arrow.png" style="position: absolute; left: 15px;">
+                        <img class="second" src="/resources/articles/2018/11/9/1/images/second-arrow.png" style="position: absolute; left: 15px;">
+                    </div>
+					<p class="date" style="padding-top: 15px;">Loading...</p>
+					<div class="new-app">
+						<p>Check out the new app</p>
+						
+						<a href="/resources/applications/Dev-App/index.html">
+						<button>
+							HERE
+						</button>
+						</a>
+					</div>
+                </div>
+			</div>
+			<footer>
+				
+			</footer>
+		</div>
+        <!-- Functions are run -->
+        <script>articleLoad();</script>
+        <script>
+            addDate();
+            window.setInterval(function(){addDate()}, 100);</script>
+	</body>
+</html>
