@@ -1,63 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-        <meta charset="urf-8">
-		<title>Artur Wagner's website</title>
-        <link rel="stylesheet" type="text/css" href="/resources/css/styles/dark-theme.css"> 
-        <script src="/resources/js/jquery.js"></script>
-        
-        <!-- List of post is loaded from newest to oldest, var articleList -->
-        <script src="/resources/articles/list.js"></script>
-        
-        <script src="/resources/js/articleAdd.js"></script>
-        <script src="/resources/js/nav-hover.js"></script>
-        <script src="/resources/js/sidebar-date.js"></script>
-	</head>
-	<body>
-		<div id="wrapper">
-			<div id="header-container">
-				<dir id="hero"></dir>
-				<nav>
-					<ul>
-						<li><a class="nav-selected" href="/index.html">Home</a></li>
-						<li><a href="https://github.com/ArturWagnerBusiness">Github</a></li>
-						<li><a href="https://twitter.com/ArturWagner15">Twitter</a></li>
-						<li><a href="https://www.youtube.com/channel/UCmtVoC0nyojWcpXMGxJ5RIQ">Youtube</a></li>
-						<li><a href="/resources/applications/Dev-App/index.html">Dev App</a></li>
-                    </ul>
-				</nav>
-			</div>
-			<div id="container">
-				<div id="main-col">
-					<div id="content"></div>
-                    <button id="load-post" onclick="articleLoad()">Click me to load more!</button>
-				</div>
-				<div id="side-col">
-                    <div class="time">
-                        <img class="hour" src="/resources/articles/2018/11/9/1/images/hour-arrow.png" style="position: absolute; left: 15px;">
-                        <img class="minute" src="/resources/articles/2018/11/9/1/images/minute-arrow.png" style="position: absolute; left: 15px;">
-                        <img class="second" src="/resources/articles/2018/11/9/1/images/second-arrow.png" style="position: absolute; left: 15px;">
-                    </div>
-					<p class="date" style="padding-top: 15px;">Loading...</p>
-					<div class="new-app">
-						<p>Check out the new app</p>
-						
-						<a href="/resources/applications/Dev-App/index.html">
-						<button>
-							HERE
-						</button>
-						</a>
-					</div>
-                </div>
-			</div>
-			<footer>
-				
-			</footer>
-		</div>
-        <!-- Functions are run -->
-        <script>articleLoad();</script>
-        <script>
-            addDate();
-            window.setInterval(function(){addDate()}, 100);</script>
-	</body>
+<head>
+    <!-- Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script async src="https://platform.twitter.com/widgets.js" defer charset="utf-8"></script>
+    <!-- Meta data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Artur Wagner">
+    <meta name="description" content="Home of several applications, games and music.">
+    <meta name="keywords" content="Games, Music, Artur, Wagner, Applications">
+
+    <link rel="stylesheet" href="/resources/css/data_theme.css">
+    <link rel="stylesheet" href="/resources/css/essential.css">
+    <link rel="stylesheet" href="/resources/css/homepage.css">
+
+    <script src="/resources/js/data_theme.js" defer></script>
+    <title>Home Page</title>
+
+</head>
+<body>
+    <nav>
+        <div id="hamburger">burger ICON</div>
+        <div id="nav-items">
+            <a class="home selected" href="/index.html"><p>Home</p></a>
+            <a class="games" href="/resources/webpages/games.html"><p>Games</p></a>
+            <a class="music" href="/resources/webpages/music.html"><p>Music</p></a>
+            <a class="applications" href="/resources/webpages/applications.html"><p>Applications</p></a>
+        </div>
+        <div id="colormode">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>
+        </div>
+    </nav>
+    <div id="content">
+        <div id="main">
+            <article>
+                <h1>Website is in developement</h1>
+                <p>It may take some time but for now this is all</p>
+                <p>Please consider viewing my creations or see my other content on other sites</p>
+            </article>
+        </div>
+        <div id="side">
+            <div id="social-media">
+                <a class="youtube" href="https://www.youtube.com/channel/UCmtVoC0nyojWcpXMGxJ5RIQ?view_as=subscriber">
+                    <div class="icon"><img width="100%" src="/resources/assets/social_media/youtube.png"></div>
+                    <div class="text">YouTube</div>
+                </a>
+                <a class="github" href="https://github.com/ArturWagnerBusiness">
+                    <div class="icon"><img height="100%" src="/resources/assets/social_media/github_dark.png"></div>
+                    <div class="text">GitHub</div>
+                </a>
+                <a class="twitch" href="https://www.twitch.tv/eis3twitch">
+                    <div class="icon"><img width="100%" src="/resources/assets/social_media/twitch.png"></div>
+                    <div class="text">Twitch</div>
+                </a>
+                <a class="discord" href="https://discord.gg/yMzhtTZ">
+                    <div class="icon"><img width="120%" src="/resources/assets/social_media/discord.png"></div>
+                    <div class="text"><p>Discord</p></div>
+                </a>
+                <a class="twitter" href="https://twitter.com/Eis3Programmer">
+                    <div class="icon"><img width="130%" src="/resources/assets/social_media/twitter.png"></div>
+                    <div class="text">Twitter</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer>Developed by Artur Wagner</footer>
+</body>
 </html>
