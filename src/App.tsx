@@ -1,17 +1,19 @@
 import React from 'react';
 
-import Home from './Home';
-import AboutMe from './AboutMe';
-import Music from './Music';
-import Games from './Games';
-import Applications from './Applications';
-
 
 export default class App extends React.Component{
+  box(){
+    return (
+      <div>
+        <h1>e</h1>
+        <p>World text</p>
+      </div>
+    )
+  }
   render(){
     return(
       <div className="App">
-        
+        {this.box()}
       </div>
     )
   }
