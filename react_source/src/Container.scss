@@ -1,13 +1,27 @@
 .Container {
   width: 100%;
-}
-.content {
-  display: flex;
-  flex-direction: column;
-  max-width: 1000px;
-  padding: 25px;
-  margin: 100px auto auto auto;
-}
-.content * {
-  font-family: "Roboto", sans-serif;
+  .content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    padding: 25px;
+    margin: 100px auto auto auto;
+
+    .head {
+      text-align: center;
+    }
+    > h2 {
+      border-top: 1px solid #bdbdbd;
+      padding-top: 20px;
+      text-align: center;
+    }
+    .timeline-info {
+      padding: 5px;
+      text-align: left;
+    }
+    * {
+      font-family: "Roboto", sans-serif;
+      color: #454545;
+    }
+  }
 }

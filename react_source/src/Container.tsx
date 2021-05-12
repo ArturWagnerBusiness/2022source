@@ -1,18 +1,29 @@
 import React, { Component } from "react";
 import "./Container.scss";
-
+import Education from "./Education";
+import Projects from "./Projects";
+import Interests from "./Interests";
+import { Typography } from "@material-ui/core";
 export default class Container extends Component {
   render() {
     return (
       <div className="Container">
-        <div className="content">
-          <h1>Welcome to Artur Wagner Business!</h1>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
-            doloribus enim natus iure ea, incidunt molestiae accusantium minus
-            unde provident modi neque? Eligendi quam dicta dolorem quis
-            perspiciatis debitis quibusdam.
-          </p>
+        <div className="content" data-aos="fade-right">
+          <div className="head">
+            <Typography variant="h3">
+              👋 Hello I am <strong>Artur Wagner!</strong>{" "}
+            </Typography>
+            <p>
+              I am a keen individual who has had their share of code experience.
+              Welcome to my website!
+            </p>
+          </div>
+          <h2>🎓 Education</h2>
+          <Education />
+          <h2>🔥 Projects</h2>
+          <Projects />
+          <h2>🎵 Interests!</h2>
+          <Interests />
         </div>
       </div>
     );
