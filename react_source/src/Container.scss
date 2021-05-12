@@ -1,0 +1,13 @@
+.Container {
+  width: 100%;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  padding: 25px;
+  margin: 100px auto auto auto;
+}
+.content * {
+  font-family: "Roboto", sans-serif;
+}
