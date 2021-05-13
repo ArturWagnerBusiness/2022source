@@ -33,9 +33,9 @@ export default class CmdEditor extends Component {
         >
           <img
             data-aos="fade-left"
-            src="/cmd-on-site.png"
+            src="/images/cmd-on-site.png"
             width="100%"
-            alt="Image of terminal file editor on the website"
+            alt="terminal file editor on the website"
           />
         </Link>
       </div>

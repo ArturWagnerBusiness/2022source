@@ -46,8 +46,8 @@ export default class ProjectWebsite extends Component {
         >
           <img
             data-aos="fade-left"
-            src="/2020source-home.jpg"
-            alt="Image of 2020 website"
+            src="/images/2020source-home.jpg"
+            alt="2020 website"
             width="100%"
           />
         </Link>
@@ -75,8 +75,8 @@ export default class ProjectWebsite extends Component {
         >
           <img
             data-aos="fade-left"
-            src="/2018source-home.jpg"
-            alt="Image of 2020 website"
+            src="/images/2018source-home.jpg"
+            alt="2020 website"
             width="100%"
           />
         </Link>
@@ -95,8 +95,8 @@ export default class ProjectWebsite extends Component {
         >
           <img
             data-aos="fade-left"
-            src="/2018source-loadmore.jpg"
-            alt="Image of 2020 website"
+            src="/images/2018source-loadmore.jpg"
+            alt="2020 website"
             width="100%"
           />
         </Link>

@@ -95,7 +95,7 @@ export default class Projects extends Component {
           >
             <img
               data-aos="fade-left"
-              src="/game-dau.png"
+              src="/images/game-dau.png"
               alt="Game Darkness around us"
             />
           </Link>
@@ -114,7 +114,7 @@ export default class Projects extends Component {
           >
             <img
               data-aos="fade-left"
-              src="/game-ros.png"
+              src="/images/game-ros.png"
               alt="Game Rise of Salior"
             />
           </Link>
