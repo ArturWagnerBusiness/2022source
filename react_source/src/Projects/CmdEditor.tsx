@@ -27,17 +27,12 @@ export default class CmdEditor extends Component {
           </Link>
         </Typography>
         <br />
-        <Link
-          href="https://arturwagnerbusiness.github.io/2018source/"
-          target="_blank"
-        >
-          <img
-            data-aos="fade-left"
-            src="/images/cmd-on-site.png"
-            width="100%"
-            alt="terminal file editor on the website"
-          />
-        </Link>
+        <img
+          data-aos="fade-left"
+          src="/images/cmd-on-site.png"
+          width="100%"
+          alt="terminal file editor on the website"
+        />
       </div>
     );
   }

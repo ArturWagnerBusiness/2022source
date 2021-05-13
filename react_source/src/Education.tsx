@@ -32,9 +32,12 @@ export default class Education extends Component {
             <TimelineContent>
               <Paper className="timeline-info">
                 <Typography>
-                  Some short-medium paragraphs about what I did in the first and
-                  second year of the university. Make it short as it would make
-                  the history graph look ugly.
+                  In Kingston I have been placed is several team projects which
+                  moved from my comfort zones. During the <em>first year</em> I
+                  was already made to create teams at the start of the year
+                  where I didn't know anyone. During the <em>second year</em> I
+                  was placed in pre-determined teams to create a fully working
+                  site for "cheese enthusiasts".
                 </Typography>
               </Paper>
             </TimelineContent>
@@ -59,10 +62,10 @@ export default class Education extends Component {
             <TimelineContent>
               <Paper className="timeline-info">
                 <Typography>
-                  Barnhill Sixth form was a place where my journey as a
-                  programmer started. <br />
-                  My first language was python, which I immediately fell in love
-                  in.
+                  During Sixth form I have made a lot of small applications in
+                  python which was also my first language. I even used it to
+                  automate development on my final project website to automate
+                  generation on several html pages.
                 </Typography>
               </Paper>
             </TimelineContent>

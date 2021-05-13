@@ -3,6 +3,7 @@ import "./Container.scss";
 import Education from "./Education";
 import Projects from "./Projects";
 import Interests from "./Interests";
+import Contact from "./Contact";
 import { Typography } from "@material-ui/core";
 export default class Container extends Component {
   render() {
@@ -24,12 +25,10 @@ export default class Container extends Component {
           <Projects />
           <h2>🎵 Interests!</h2>
           <Interests />
-          <br />
+          <h2>📫 Contact and Info</h2>
+          <Contact />
           <h4 style={{ textAlign: "center" }}>
-            🔨 Build with the awesome power of react!{" "}
-            <h5>
-              <em>+Material-UI</em>
-            </h5>
+            🔨 Build with the awesome power of react!
           </h4>
         </div>
       </div>

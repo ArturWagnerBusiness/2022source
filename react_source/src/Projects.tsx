@@ -103,9 +103,10 @@ export default class Projects extends Component {
           <Typography data-aos="fade-right">
             The second one "Rise of Selior" was a game developed using Phaser.js
             and Electron.
+            <br />
             <em>
               (The version on the web was striped from the electron to make it
-              execute on web.)
+              executable on web.)
             </em>
           </Typography>
           <Link

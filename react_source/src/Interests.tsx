@@ -6,6 +6,7 @@ export default class Interests extends Component {
     return (
       <div className="Interests">
         <Typography data-aos="fade-down">
+          I performed piano during my Sixth form in barnhill <br />
           These performances were recorded during 2018
         </Typography>
         <iframe

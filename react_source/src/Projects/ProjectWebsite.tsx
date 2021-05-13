@@ -40,17 +40,22 @@ export default class ProjectWebsite extends Component {
           .
         </Typography>
         <br />
-        <Link
-          href="https://arturwagnerbusiness.github.io/2020source/"
-          target="_blank"
-        >
-          <img
+        <img
+          data-aos="fade-left"
+          src="/images/2020source-home.jpg"
+          alt="2020 website"
+          width="100%"
+        />
+        <Typography data-aos="fade-left">
+          <Link
             data-aos="fade-left"
-            src="/images/2020source-home.jpg"
-            alt="2020 website"
-            width="100%"
-          />
-        </Link>
+            href="https://arturwagnerbusiness.github.io/2020source/"
+            target="_blank"
+          >
+            Visit the site
+          </Link>
+        </Typography>
+
         <br />
         <br />
         <Typography variant="h4" data-aos="fade-down">
@@ -69,17 +74,20 @@ export default class ProjectWebsite extends Component {
           sight
         </Typography>
         <br />
-        <Link
-          href="https://arturwagnerbusiness.github.io/2018source/"
-          target="_blank"
-        >
-          <img
-            data-aos="fade-left"
-            src="/images/2018source-home.jpg"
-            alt="2020 website"
-            width="100%"
-          />
-        </Link>
+        <img
+          data-aos="fade-left"
+          src="/images/2018source-home.jpg"
+          alt="2020 website"
+          width="100%"
+        />
+        <Typography data-aos="fade-left">
+          <Link
+            href="https://arturwagnerbusiness.github.io/2018source/"
+            target="_blank"
+          >
+            Visit the site
+          </Link>
+        </Typography>
         <br />
         <Typography data-aos="fade-right">
           At the time I didn't want the user to have to load every single post.
@@ -89,17 +97,12 @@ export default class ProjectWebsite extends Component {
           reached the bottom and clicks load more.
         </Typography>
         <br />
-        <Link
-          href="https://arturwagnerbusiness.github.io/2018source/"
-          target="_blank"
-        >
-          <img
-            data-aos="fade-left"
-            src="/images/2018source-loadmore.jpg"
-            alt="2020 website"
-            width="100%"
-          />
-        </Link>
+        <img
+          data-aos="fade-left"
+          src="/images/2018source-loadmore.jpg"
+          alt="2020 website"
+          width="100%"
+        />
       </div>
     );
   }
