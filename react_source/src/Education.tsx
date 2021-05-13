@@ -17,10 +17,12 @@ export default class Education extends Component {
           <TimelineItem>
             <TimelineOppositeContent>
               <Typography variant="h6">
-                <strong>(Current) </strong>
-                <Link href="https://www.kingston.ac.uk" target="_blank">
-                  Kingston University
-                </Link>
+                <strong>
+                  (Current){" "}
+                  <Link href="https://www.kingston.ac.uk" target="_blank">
+                    Kingston University
+                  </Link>{" "}
+                </strong>
                 <br />
                 <em>2019-2022</em>
               </Typography>
@@ -45,13 +47,15 @@ export default class Education extends Component {
           <TimelineItem>
             <TimelineOppositeContent>
               <Typography variant="h6">
-                <Link
-                  href="https://www.barnhill.hillingdon.sch.uk"
-                  target="_blank"
-                >
-                  Barnhill Community High School
-                </Link>{" "}
-                (Sixth form) <br />
+                <strong>
+                  <Link
+                    href="https://www.barnhill.hillingdon.sch.uk"
+                    target="_blank"
+                  >
+                    Barnhill Community High School - Sixth Form
+                  </Link>{" "}
+                </strong>
+                <br />
                 <em>2017-2019</em>
               </Typography>
             </TimelineOppositeContent>

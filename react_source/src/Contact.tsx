@@ -4,7 +4,7 @@ import {
   DialogContent,
   DialogContentText,
   DialogTitle,
-  Link,
+  Grid,
   Typography,
 } from "@material-ui/core";
 import React, { Component } from "react";
@@ -20,38 +20,45 @@ export default class Contact extends Component {
   render() {
     return (
       <div className="Contact">
-        <Button
-          href="https://github.com/ArturWagnerBusiness/arturwagnerbusiness.github.io"
-          data-aos="fade-left"
-          variant="outlined"
-          startIcon={<CodeIcon />}
-        >
-          Source code
-        </Button>
-        <br />
-        <br />
-        <Button
-          href="https://github.com/ArturWagnerBusiness"
-          data-aos="fade-right"
-          variant="outlined"
-          startIcon={<GitHubIcon />}
-        >
-          Github Profile
-        </Button>
-        <br />
-        <br />
-        <Button
-          data-aos="fade-left"
-          variant="outlined"
-          startIcon={<AlternateEmailIcon />}
-          onClick={() => {
-            this.setState({
-              open: true,
-            });
-          }}
-        >
-          Contact Details
-        </Button>
+        <Grid container justify="center" spacing={3} direction="column">
+          <Grid key={0} item>
+            <Button
+              className="interactive"
+              href="https://github.com/ArturWagnerBusiness/arturwagnerbusiness.github.io"
+              data-aos="flip-left"
+              variant="outlined"
+              startIcon={<CodeIcon />}
+            >
+              Source code
+            </Button>
+          </Grid>
+          <Grid key={1} item>
+            <Button
+              className="interactive"
+              href="https://github.com/ArturWagnerBusiness"
+              data-aos="flip-left"
+              variant="outlined"
+              startIcon={<GitHubIcon />}
+            >
+              Github Profile
+            </Button>
+          </Grid>
+          <Grid key={2} item>
+            <Button
+              className="interactive"
+              data-aos="flip-left"
+              variant="outlined"
+              startIcon={<AlternateEmailIcon />}
+              onClick={() => {
+                this.setState({
+                  open: true,
+                });
+              }}
+            >
+              Contact Details
+            </Button>
+          </Grid>
+        </Grid>
         <Dialog
           open={this.state.open}
           onClose={() => {

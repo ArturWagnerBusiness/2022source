@@ -2,18 +2,13 @@ import { AppBar, Box, Link, Tab, Tabs, Typography } from "@material-ui/core";
 import React, { Component } from "react";
 import ProjectWebsite from "./Projects/ProjectWebsite";
 import CmdEditor from "./Projects/CmdEditor";
-// ! TEMPLATE CODE, FIX LATER
+import "./Projects.scss";
+
 function TabPanel(props: any) {
   const { children, value, index, ...other } = props;
 
   return (
-    <div
-      role="tabpanel"
-      hidden={value !== index}
-      id={`simple-tabpanel-${index}`}
-      aria-labelledby={`simple-tab-${index}`}
-      {...other}
-    >
+    <div role="tabpanel" hidden={value !== index} {...other}>
       {value === index && <Box p={3}>{children}</Box>}
     </div>
   );
@@ -32,11 +27,21 @@ export default class Projects extends Component {
             onChange={(event, val) => {
               this.setState({ projectSelected: val });
             }}
+            variant="scrollable"
+            scrollButtons="on"
           >
-            <Tab label="Personal website" />
-            <Tab label="CMD" />
-            <Tab label="Python Video Tutorial" />
-            <Tab label="Simple games" />
+            {[
+              "Personal Websites",
+              "CMD Text Editor",
+              "Python video tutorial",
+              "Simple Games",
+            ].map((element) => {
+              return (
+                <Tab
+                  label={<Typography className="tab">{element}</Typography>}
+                />
+              );
+            })}
           </Tabs>
         </AppBar>
         <TabPanel value={this.state.projectSelected} index={0}>
