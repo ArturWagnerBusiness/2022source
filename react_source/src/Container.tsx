@@ -11,7 +11,7 @@ export default class Container extends Component {
         <div className="content" data-aos="fade-right">
           <div className="head">
             <Typography variant="h3">
-              👋 Hello I am <strong>Artur Wagner!</strong>{" "}
+              👋 Hello, I am <strong>Artur Wagner!</strong>{" "}
             </Typography>
             <p>
               I am a keen individual who has had their share of code experience.
@@ -24,6 +24,13 @@ export default class Container extends Component {
           <Projects />
           <h2>🎵 Interests!</h2>
           <Interests />
+          <br />
+          <h4 style={{ textAlign: "center" }}>
+            🔨 Build with the awesome power of react!{" "}
+            <h5>
+              <em>+Material-UI</em>
+            </h5>
+          </h4>
         </div>
       </div>
     );

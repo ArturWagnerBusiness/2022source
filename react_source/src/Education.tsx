@@ -46,9 +46,9 @@ export default class Education extends Component {
                   href="https://www.barnhill.hillingdon.sch.uk"
                   target="_blank"
                 >
-                  Barnhill Community High School (Sixth form)
-                </Link>
-                <br />
+                  Barnhill Community High School
+                </Link>{" "}
+                (Sixth form) <br />
                 <em>2017-2019</em>
               </Typography>
             </TimelineOppositeContent>
