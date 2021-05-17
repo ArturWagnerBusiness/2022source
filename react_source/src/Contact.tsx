@@ -76,8 +76,9 @@ export default class Contact extends Component {
           </DialogTitle>
           <DialogContent>
             <DialogContentText data-aos="fade-right" variant="h6">
-              Email: arturwagner@yahoo.com <br />
-              Mobile: {"<Provided on email>"}
+              <strong>
+                Email: arturwagner@yahoo.com <br /> Mobile: 07467125666
+              </strong>
             </DialogContentText>
           </DialogContent>
         </Dialog>

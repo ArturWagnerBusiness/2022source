@@ -19,7 +19,7 @@ export default class Education extends Component {
               <Typography variant="h6">
                 <strong>
                   (Current){" "}
-                  <Link href="https://www.kingston.ac.uk" target="_blank">
+                  <Link href="https://www.kingston.ac.uk">
                     Kingston University
                   </Link>{" "}
                 </strong>
@@ -48,10 +48,7 @@ export default class Education extends Component {
             <TimelineOppositeContent>
               <Typography variant="h6">
                 <strong>
-                  <Link
-                    href="https://www.barnhill.hillingdon.sch.uk"
-                    target="_blank"
-                  >
+                  <Link href="https://www.barnhill.hillingdon.sch.uk">
                     Barnhill Community High School - Sixth Form
                   </Link>{" "}
                 </strong>

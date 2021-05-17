@@ -12,7 +12,7 @@ export default class Container extends Component {
         <div className="content" data-aos="fade-right">
           <div className="head">
             <Typography variant="h3">
-              👋 Hello, I am <strong>Artur Wagner!</strong>{" "}
+              👋 Hello, I am <strong>Artur Wagner!</strong>
             </Typography>
             <p>
               I am a keen individual who has had their share of code experience.

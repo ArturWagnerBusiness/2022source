@@ -1,4 +1,4 @@
-import { Link, Typography } from "@material-ui/core";
+import { Button, ButtonGroup, Link, Typography } from "@material-ui/core";
 import React, { Component } from "react";
 
 export default class ProjectWebsite extends Component {
@@ -10,31 +10,22 @@ export default class ProjectWebsite extends Component {
         </Typography>
         <Typography data-aos="fade-right">
           This website design I first{" "}
-          <Link href="https://www.figma.com" target="_blank">
-            Figma
-          </Link>{" "}
-          which is a great design tool to create layouts. Once I knew how I
-          wanted to website to look like I was then able to go straight into the
-          development process. At the time I really wanted to add fancy
-          navigation bar so I used a css property skew to bend the rectangles
-          into these polygons. <br /> There is also a Theme changer at the top
-          side.
+          <Link href="https://www.figma.com">Figma</Link> which is a great
+          design tool to create layouts. Once I knew how I wanted to website to
+          look like I was then able to go straight into the development process.
+          At the time I really wanted to add fancy navigation bar so I used a
+          css property skew to bend the rectangles into these polygons. <br />{" "}
+          There is also a Theme changer at the top side.
           <br />
           The website was abandoned so there are only 2 games and 2 musics I
           developed at the time.
           <br />
           The website has its files on{" "}
-          <Link
-            href="https://github.com/ArturWagnerBusiness/2020source"
-            target="_blank"
-          >
+          <Link href="https://github.com/ArturWagnerBusiness/2020source">
             this repository
           </Link>{" "}
           and can be{" "}
-          <Link
-            href="https://arturwagnerbusiness.github.io/2020source/"
-            target="_blank"
-          >
+          <Link href="https://arturwagnerbusiness.github.io/2020source/">
             viewed here
           </Link>{" "}
           .
@@ -46,15 +37,14 @@ export default class ProjectWebsite extends Component {
           alt="2020 website"
           width="100%"
         />
-        <Typography data-aos="fade-left">
-          <Link
-            data-aos="fade-left"
-            href="https://arturwagnerbusiness.github.io/2020source/"
-            target="_blank"
-          >
-            Visit the site
-          </Link>
-        </Typography>
+        <ButtonGroup data-aos="fade-left">
+          <Button href="https://arturwagnerbusiness.github.io/2020source/">
+            <strong>View site</strong>
+          </Button>
+          <Button href="https://github.com/ArturWagnerBusiness/2020source">
+            <strong>Source code</strong>
+          </Button>
+        </ButtonGroup>
 
         <br />
         <br />
@@ -66,12 +56,9 @@ export default class ProjectWebsite extends Component {
           development skills but I was unable to come up with a design. I
           decided to look around the internet for a website that looks simple
           but yet challenging to create. I stumbled onto{" "}
-          <Link href="https://www.mikufan.com/" target="_blank">
-            mikufan.com
-          </Link>{" "}
-          which I liked the layout of. The challenge was not directly looking at
-          any css on the website but trying to recreate everything from just
-          sight
+          <Link href="https://www.mikufan.com/">mikufan.com</Link> which I liked
+          the layout of. The challenge was not directly looking at any css on
+          the website but trying to recreate everything from just sight
         </Typography>
         <br />
         <img
@@ -80,14 +67,15 @@ export default class ProjectWebsite extends Component {
           alt="2020 website"
           width="100%"
         />
-        <Typography data-aos="fade-left">
-          <Link
-            href="https://arturwagnerbusiness.github.io/2018source/"
-            target="_blank"
-          >
-            Visit the site
-          </Link>
-        </Typography>
+        <ButtonGroup data-aos="fade-left">
+          <Button href="https://arturwagnerbusiness.github.io/2018source/">
+            <strong>View site</strong>
+          </Button>
+          <Button href="https://github.com/ArturWagnerBusiness/2018source">
+            <strong>Source code</strong>
+          </Button>
+        </ButtonGroup>
+        <br />
         <br />
         <Typography data-aos="fade-right">
           At the time I didn't want the user to have to load every single post.
