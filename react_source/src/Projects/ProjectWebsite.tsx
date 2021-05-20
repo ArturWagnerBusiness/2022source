@@ -6,7 +6,7 @@ export default class ProjectWebsite extends Component {
     return (
       <div className="ProjectWebsite">
         <Typography variant="h4" data-aos="fade-down">
-          2020 Design
+          2020 Web Design
         </Typography>
         <Typography data-aos="fade-right">
           This website design I first{" "}
@@ -17,18 +17,7 @@ export default class ProjectWebsite extends Component {
           css property skew to bend the rectangles into these polygons. <br />{" "}
           There is also a Theme changer at the top side.
           <br />
-          The website was abandoned so there are only 2 games and 2 musics I
-          developed at the time.
-          <br />
-          The website has its files on{" "}
-          <Link href="https://github.com/ArturWagnerBusiness/2020source">
-            this repository
-          </Link>{" "}
-          and can be{" "}
-          <Link href="https://arturwagnerbusiness.github.io/2020source/">
-            viewed here
-          </Link>{" "}
-          .
+          The website only has 2 games and 2 musics I developed at the time.
         </Typography>
         <br />
         <img
@@ -49,7 +38,7 @@ export default class ProjectWebsite extends Component {
         <br />
         <br />
         <Typography variant="h4" data-aos="fade-down">
-          2018/2019 Design
+          2018/2019 Web Design
         </Typography>
         <Typography data-aos="fade-right">
           At the time I really wanted to develop a website to practice my

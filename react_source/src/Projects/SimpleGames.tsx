@@ -40,6 +40,9 @@ export default class SimpleGames extends Component {
           <Button href="https://arturwagnerbusiness.github.io/2020source/resources/games/darkness_within_us/index.html">
             <strong>Play game</strong>
           </Button>
+          <Button href="https://github.com/ArturWagnerBusiness/Unity-game-2020">
+            <strong>View Source</strong>
+          </Button>
         </ButtonGroup>
         <br />
         <br />

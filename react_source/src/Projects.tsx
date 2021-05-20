@@ -32,10 +32,10 @@ export default class Projects extends Component {
             scrollButtons="on"
           >
             {[
-              "Personal Websites",
-              "CMD Text Editor",
-              "Python video tutorial",
-              "Simple Games",
+              "🌐 Personal Websites",
+              "💻 CMD Text Editor",
+              "🎥 Video tutorial",
+              "🎮 Simple Games",
             ].map((element) => {
               return (
                 <Tab

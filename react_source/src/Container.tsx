@@ -15,8 +15,10 @@ export default class Container extends Component {
               👋 Hello, I am <strong>Artur Wagner!</strong>
             </Typography>
             <p>
-              I am a keen individual who has had their share of code experience.
-              Welcome to my website!
+              <em>
+                "Programming is an infinite struggle in an infinite progression
+                line."
+              </em>
             </p>
           </div>
           <h2>🎓 Education</h2>

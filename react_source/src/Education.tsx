@@ -34,12 +34,10 @@ export default class Education extends Component {
             <TimelineContent>
               <Paper className="timeline-info">
                 <Typography>
-                  In Kingston I have been placed is several team projects which
-                  moved from my comfort zones. During the <em>first year</em> I
-                  was already made to create teams at the start of the year
-                  where I didn't know anyone. During the <em>second year</em> I
-                  was placed in pre-determined teams to create a fully working
-                  site for "cheese enthusiasts".
+                  Place where I was given opportunities to work in agile teams.
+                  During the <em>second year</em> I was placed in pre-determined
+                  teams to create a fully working site for "cheese enthusiasts".
+                  Using html/css/js for front-end and php/mysql for back-end
                 </Typography>
               </Paper>
             </TimelineContent>
@@ -66,7 +64,12 @@ export default class Education extends Component {
                   During Sixth form I have made a lot of small applications in
                   python which was also my first language. I even used it to
                   automate development on my final project website to automate
-                  generation on several html pages.
+                  generation on several html pages. Lot of these small projects
+                  can be found{" "}
+                  <Link href="https://github.com/ArturWagnerBusiness/Projects-2018-2020">
+                    here
+                  </Link>
+                  .
                 </Typography>
               </Paper>
             </TimelineContent>
