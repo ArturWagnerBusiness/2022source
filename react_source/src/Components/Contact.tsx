@@ -11,7 +11,6 @@ import React, { Component } from "react";
 import CodeIcon from "@material-ui/icons/Code";
 import AlternateEmailIcon from "@material-ui/icons/AlternateEmail";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import "./Contact.scss";
 
 export default class Contact extends Component {
   state = {
@@ -20,16 +19,24 @@ export default class Contact extends Component {
   render() {
     return (
       <div className="Contact">
-        <Grid container justify="center" spacing={3} direction="column">
+        <Grid
+          container
+          justify="center"
+          spacing={3}
+          direction="column"
+          alignItems="center"
+        >
           <Grid key={0} item>
             <Button
               className="interactive"
               href="https://github.com/ArturWagnerBusiness/arturwagnerbusiness.github.io"
               data-aos="flip-left"
               variant="outlined"
+              color="inherit"
+              size="large"
               startIcon={<CodeIcon />}
             >
-              Source code
+              <Typography variant="h5">Source code</Typography>
             </Button>
           </Grid>
           <Grid key={1} item>
@@ -38,9 +45,11 @@ export default class Contact extends Component {
               href="https://github.com/ArturWagnerBusiness"
               data-aos="flip-left"
               variant="outlined"
+              color="inherit"
               startIcon={<GitHubIcon />}
+              size="large"
             >
-              Github Profile
+              <Typography variant="h5">Github Profile</Typography>
             </Button>
           </Grid>
           <Grid key={2} item>
@@ -48,6 +57,8 @@ export default class Contact extends Component {
               className="interactive"
               data-aos="flip-left"
               variant="outlined"
+              color="inherit"
+              size="large"
               startIcon={<AlternateEmailIcon />}
               onClick={() => {
                 this.setState({
@@ -55,7 +66,7 @@ export default class Contact extends Component {
                 });
               }}
             >
-              Contact Details
+              <Typography variant="h5">Contact Details</Typography>
             </Button>
           </Grid>
         </Grid>
@@ -82,6 +93,13 @@ export default class Contact extends Component {
             </DialogContentText>
           </DialogContent>
         </Dialog>
+        <br />
+        <div className="center">
+          <Typography variant="h5">
+            🔨 Build with the awesome power of react!
+          </Typography>
+        </div>
+        <br />
       </div>
     );
   }

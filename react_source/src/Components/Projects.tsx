@@ -1,10 +1,9 @@
 import { AppBar, Box, Tab, Tabs, Typography } from "@material-ui/core";
 import React, { Component } from "react";
-import ProjectWebsite from "./Projects/ProjectWebsite";
-import CmdTextEditor from "./Projects/CmdTextEditor";
-import PythonVideoTutorial from "./Projects/PythonVideoTutorial";
-import SimpleGames from "./Projects/SimpleGames";
-import "./Projects.scss";
+import ProjectWebsite from "./../Projects/ProjectWebsite";
+import CmdTextEditor from "./../Projects/CmdTextEditor";
+import PythonVideoTutorial from "./../Projects/PythonVideoTutorial";
+import SimpleGames from "./../Projects/SimpleGames";
 
 function TabPanel(props: any) {
   const { children, value, index, ...other } = props;
@@ -39,7 +38,16 @@ export default class Projects extends Component {
             ].map((element) => {
               return (
                 <Tab
-                  label={<Typography className="tab">{element}</Typography>}
+                  label={
+                    <Typography
+                      style={{
+                        fontWeight: "bold",
+                        fontSize: "18px",
+                      }}
+                    >
+                      {element}
+                    </Typography>
+                  }
                 />
               );
             })}

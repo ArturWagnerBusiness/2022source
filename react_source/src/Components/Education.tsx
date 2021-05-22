@@ -33,7 +33,11 @@ export default class Education extends Component {
             </TimelineSeparator>
             <TimelineContent>
               <Paper className="timeline-info">
-                <Typography>
+                <Typography
+                  style={{
+                    padding: "5px",
+                  }}
+                >
                   Place where I was given opportunities to work in agile teams.
                   During the <em>second year</em> I was placed in pre-determined
                   teams to create a fully working site for "cheese enthusiasts".
@@ -60,7 +64,11 @@ export default class Education extends Component {
             </TimelineSeparator>
             <TimelineContent>
               <Paper className="timeline-info">
-                <Typography>
+                <Typography
+                  style={{
+                    padding: "5px",
+                  }}
+                >
                   During Sixth form I have made a lot of small applications in
                   python which was also my first language. I even used it to
                   automate development on my final project website to automate
