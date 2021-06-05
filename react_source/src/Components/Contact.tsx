@@ -11,7 +11,7 @@ import React, { Component } from "react";
 import CodeIcon from "@material-ui/icons/Code";
 import AlternateEmailIcon from "@material-ui/icons/AlternateEmail";
 import GitHubIcon from "@material-ui/icons/GitHub";
-
+import BuildRoundedIcon from "@material-ui/icons/BuildRounded";
 export default class Contact extends Component {
   state = {
     open: false,
@@ -96,7 +96,7 @@ export default class Contact extends Component {
         <br />
         <div className="center">
           <Typography variant="h5">
-            🔨 Build with the awesome power of react!
+            <BuildRoundedIcon /> Build with the awesome power of react!
           </Typography>
         </div>
         <br />

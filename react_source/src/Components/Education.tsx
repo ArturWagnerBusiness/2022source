@@ -41,7 +41,7 @@ export default class Education extends Component {
                   Place where I was given opportunities to work in agile teams.
                   During the <em>second year</em> I was placed in pre-determined
                   teams to create a fully working site for "cheese enthusiasts".
-                  Using html/css/js for front-end and php/mysql for back-end
+                  Using html/css/js for front-end and php/mysql for back-end.
                 </Typography>
               </Paper>
             </TimelineContent>

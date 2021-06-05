@@ -5,6 +5,10 @@ import Interests from "./Components/Interests";
 import Contact from "./Components/Contact";
 import Hero from "./Components/Hero";
 import { Box } from "@material-ui/core";
+import SchoolRoundedIcon from "@material-ui/icons/SchoolRounded";
+import WhatshotRoundedIcon from "@material-ui/icons/WhatshotRounded";
+import HeadsetRoundedIcon from "@material-ui/icons/HeadsetRounded";
+import MailRoundedIcon from "@material-ui/icons/MailRounded";
 export default class Container extends Component {
   render() {
     return (
@@ -13,7 +17,13 @@ export default class Container extends Component {
           <Hero />
           <div className="container">
             <div className="center">
-              <h4>🎓 Education</h4>
+              <h4>
+                <SchoolRoundedIcon
+                  style={{ marginBottom: "-2px" }}
+                  fontSize="large"
+                />{" "}
+                Education
+              </h4>
             </div>
           </div>
           <div className="container">
@@ -22,7 +32,13 @@ export default class Container extends Component {
           <div className="container">
             <hr />
             <div className="center">
-              <h4>🔥 Projects</h4>
+              <h4>
+                <WhatshotRoundedIcon
+                  style={{ marginBottom: "-2px" }}
+                  fontSize="large"
+                />{" "}
+                Projects
+              </h4>
             </div>
           </div>
           <div className="container">
@@ -31,7 +47,13 @@ export default class Container extends Component {
           <div className="container">
             <hr />
             <div className="center">
-              <h4>🎵 Interests!</h4>
+              <h4>
+                <HeadsetRoundedIcon
+                  style={{ marginBottom: "-2px" }}
+                  fontSize="large"
+                />{" "}
+                Interests!
+              </h4>
             </div>
           </div>
           <div className="container">
@@ -48,14 +70,20 @@ export default class Container extends Component {
           >
             <div className="container">
               <div className="center">
-                <h4>📫 Contact and Info</h4>
+                <h4>
+                  <MailRoundedIcon
+                    style={{ marginBottom: "-2px" }}
+                    fontSize="large"
+                  />{" "}
+                  Contact and Info
+                </h4>
               </div>
             </div>
             <div className="container">
               <Contact />
             </div>
             <div className="container center">
-              <p>Version 1.05.22</p>
+              <p>Last update on 5th June 2021</p>
             </div>
             <br />
           </Box>

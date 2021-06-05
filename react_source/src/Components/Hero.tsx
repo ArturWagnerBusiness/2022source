@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Typography } from "@material-ui/core";
+import FreeBreakfastRoundedIcon from "@material-ui/icons/FreeBreakfastRounded";
 export default class Hero extends Component {
   render() {
     return (
@@ -10,11 +11,26 @@ export default class Hero extends Component {
         >
           <div className="section no-pad-bot container">
             <div className="center">
-              <Typography variant="h3" color="secondary">
-                👋 Hello, I am <strong>Artur Wagner!</strong>
+              <Typography
+                variant="h3"
+                color="secondary"
+                style={{ textShadow: "0 0 5px black" }}
+              >
+                <FreeBreakfastRoundedIcon
+                  style={{
+                    fontSize: "50px",
+                    marginBottom: "-9px",
+                    filter: "drop-shadow(0 0 3px black)",
+                  }}
+                />{" "}
+                Hello, I am <strong>Artur Wagner!</strong>
               </Typography>
               <br />
-              <Typography variant="subtitle1" color="secondary">
+              <Typography
+                variant="subtitle1"
+                color="secondary"
+                style={{ textShadow: "0 0 8px black" }}
+              >
                 <em>
                   "Programming is an infinite struggle in an infinite
                   progression line."
