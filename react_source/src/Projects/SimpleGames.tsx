@@ -1,4 +1,4 @@
-import { Button, ButtonGroup, Link, Typography } from "@material-ui/core";
+import { Button, ButtonGroup, Grid, Link, Typography } from "@material-ui/core";
 import React, { Component } from "react";
 
 export default class SimpleGames extends Component {
@@ -19,60 +19,74 @@ export default class SimpleGames extends Component {
           .
         </Typography>
         <br />
-        <Typography data-aos="fade-right">
-          The first one at the top "Darkness around us" was a game developed in
-          Unity Engine.
-        </Typography>
-        <img
-          style={{
-            width: "100%",
-            maxWidth: "320px",
-          }}
-          data-aos="fade-left"
-          src="/images/game-dau.png"
-          alt="Game Darkness around us"
-        />
-        <br />
-        <ButtonGroup data-aos="fade-left">
-          <Button href="https://arturwagnerbusiness.github.io/2020source/resources/webpages/games.html">
-            <strong>View site</strong>
-          </Button>
-          <Button href="https://arturwagnerbusiness.github.io/2020source/resources/games/darkness_within_us/index.html">
-            <strong>Play game</strong>
-          </Button>
-          <Button href="https://github.com/ArturWagnerBusiness/Unity-game-2020">
-            <strong>View Source</strong>
-          </Button>
-        </ButtonGroup>
-        <br />
-        <br />
-        <Typography data-aos="fade-right">
-          The second one "Rise of Selior" was a game developed using Phaser.js
-          and Electron.
-          <br />
-          <em>
-            (The version on the web was striped from the electron to make it
-            executable on web.)
-          </em>
-        </Typography>
-        <img
-          style={{
-            width: "100%",
-            maxWidth: "269px",
-          }}
-          data-aos="fade-left"
-          src="/images/game-ros.png"
-          alt="Game Rise of Salior"
-        />
-        <br />
-        <ButtonGroup data-aos="fade-left">
-          <Button href="https://arturwagnerbusiness.github.io/2020source/resources/webpages/games.html">
-            <strong>View site</strong>
-          </Button>
-          <Button href="https://arturwagnerbusiness.github.io/2020source/resources/games/rise_of_selior/index.html">
-            <strong>Play game</strong>
-          </Button>
-        </ButtonGroup>
+        <Grid container spacing={3}>
+          <Grid item container xs={6} spacing={3} data-aos="fade-right">
+            <Grid item xs={6}>
+              <img
+                style={{
+                  width: "100%",
+                  maxWidth: "320px",
+                }}
+                src="/images/game-dau.png"
+                alt="Game Darkness around us"
+              />
+              <br />
+              <ButtonGroup>
+                <Button href="https://arturwagnerbusiness.github.io/2020source/resources/webpages/games.html">
+                  <strong>Website</strong>
+                </Button>
+                <Button href="https://arturwagnerbusiness.github.io/2020source/resources/games/darkness_within_us/index.html">
+                  <strong>Play</strong>
+                </Button>
+                <Button href="https://github.com/ArturWagnerBusiness/Unity-game-2020">
+                  <strong>Source</strong>
+                </Button>
+              </ButtonGroup>
+              <br />
+            </Grid>
+            <Grid item xs={6}>
+              <Typography>
+                The first one on the left is "Darkness around us" which was a
+                game developed in the Unity Engine.
+              </Typography>
+            </Grid>
+          </Grid>
+          <Grid item container xs={6} spacing={3} data-aos="fade-left">
+            <Grid item xs={6}>
+              <Typography>
+                The second one was "Rise of Selior" which was developed using
+                Phaser.js and Electron.
+                <br />
+                <em>
+                  (The version on the web was striped from the electron to make
+                  it executable on the web.)
+                </em>
+              </Typography>
+            </Grid>
+            <Grid item xs={6}>
+              <img
+                style={{
+                  width: "100%",
+                  maxWidth: "269px",
+                }}
+                src="/images/game-ros.png"
+                alt="Game Rise of Salior"
+              />
+              <br />
+              <ButtonGroup>
+                <Button href="https://arturwagnerbusiness.github.io/2020source/resources/webpages/games.html">
+                  <strong>Website</strong>
+                </Button>
+                <Button href="https://arturwagnerbusiness.github.io/2020source/resources/games/rise_of_selior/index.html">
+                  <strong>Play</strong>
+                </Button>
+                <Button href="https://github.com/ArturWagnerBusiness/Engine">
+                  <strong>Source</strong>
+                </Button>
+              </ButtonGroup>
+            </Grid>
+          </Grid>
+        </Grid>
       </div>
     );
   }
