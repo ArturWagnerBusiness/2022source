@@ -4,10 +4,12 @@ import ProjectWebsite from "./../Projects/ProjectWebsite";
 import CmdTextEditor from "./../Projects/CmdTextEditor";
 import PythonVideoTutorial from "./../Projects/PythonVideoTutorial";
 import SimpleGames from "./../Projects/SimpleGames";
+import DiscordBot from "./../Projects/DiscordBot";
 import LanguageRoundedIcon from "@material-ui/icons/LanguageRounded";
 import ComputerRoundedIcon from "@material-ui/icons/ComputerRounded";
 import TheatersRoundedIcon from "@material-ui/icons/TheatersRounded";
 import SportsEsportsRoundedIcon from "@material-ui/icons/SportsEsportsRounded";
+import AdbIcon from "@material-ui/icons/Adb";
 function TabPanel(props: any) {
   const { children, value, index, ...other } = props;
 
@@ -24,7 +26,7 @@ export default class Projects extends Component {
   render() {
     return (
       <div className="Projects">
-        <AppBar position="static" color="default">
+        <AppBar position="static" color="primary">
           <Tabs
             value={this.state.projectSelected}
             onChange={(event, val) => {
@@ -50,6 +52,7 @@ export default class Projects extends Component {
                 <SportsEsportsRoundedIcon style={{ marginBottom: "-4px" }} />,
                 " Simple Games",
               ],
+              [<AdbIcon style={{ marginBottom: "-4px" }} />, " Discord Bot"],
             ].map((element) => {
               return (
                 <Tab
@@ -79,6 +82,9 @@ export default class Projects extends Component {
         </TabPanel>
         <TabPanel value={this.state.projectSelected} index={3}>
           <SimpleGames />
+        </TabPanel>
+        <TabPanel value={this.state.projectSelected} index={4}>
+          <DiscordBot />
         </TabPanel>
         {
           // ? Add more projects here!
