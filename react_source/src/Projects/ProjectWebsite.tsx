@@ -5,10 +5,8 @@ export default class ProjectWebsite extends Component {
   render() {
     return (
       <div className="ProjectWebsite">
-        <Typography variant="h4" data-aos="fade-down">
-          2020 Web Design
-        </Typography>
-        <Typography data-aos="fade-right">
+        <Typography variant="h4">2020 Web Design</Typography>
+        <Typography>
           This website design I first{" "}
           <Link href="https://www.figma.com">Figma</Link> which is a great
           design tool to create layouts. Once I knew how I wanted to website to
@@ -21,12 +19,11 @@ export default class ProjectWebsite extends Component {
         </Typography>
         <br />
         <img
-          data-aos="fade-left"
           src="/images/2020source-home.jpg"
           alt="2020 website"
           width="100%"
         />
-        <ButtonGroup data-aos="fade-left">
+        <ButtonGroup>
           <Button href="https://arturwagnerbusiness.github.io/2020source/">
             <strong>View site</strong>
           </Button>
@@ -37,10 +34,8 @@ export default class ProjectWebsite extends Component {
 
         <br />
         <br />
-        <Typography variant="h4" data-aos="fade-down">
-          2018/2019 Web Design
-        </Typography>
-        <Typography data-aos="fade-right">
+        <Typography variant="h4">2018/2019 Web Design</Typography>
+        <Typography>
           At the time I really wanted to develop a website to practice my
           development skills but I was unable to come up with a design. I
           decided to look around the internet for a website that looks simple
@@ -51,12 +46,11 @@ export default class ProjectWebsite extends Component {
         </Typography>
         <br />
         <img
-          data-aos="fade-left"
           src="/images/2018source-home.jpg"
           alt="2020 website"
           width="100%"
         />
-        <ButtonGroup data-aos="fade-left">
+        <ButtonGroup>
           <Button href="https://arturwagnerbusiness.github.io/2018source/">
             <strong>View site</strong>
           </Button>
@@ -66,7 +60,7 @@ export default class ProjectWebsite extends Component {
         </ButtonGroup>
         <br />
         <br />
-        <Typography data-aos="fade-right">
+        <Typography>
           At the time I didn't want the user to have to load every single post.
           As for example if I had 100 posts, loading 5 at a time would be
           appreciated. So there is a js file with paths to each post. At first
@@ -75,7 +69,6 @@ export default class ProjectWebsite extends Component {
         </Typography>
         <br />
         <img
-          data-aos="fade-left"
           src="/images/2018source-loadmore.jpg"
           alt="2020 website"
           width="100%"

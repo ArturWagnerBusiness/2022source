@@ -32,8 +32,8 @@ export default class Hero extends Component {
                 style={{ textShadow: "0 0 8px black" }}
               >
                 <em>
-                  "Programming is an infinite struggle in an infinite
-                  progression line."
+                  "Programming should be a never ending story of creating,
+                  learning and adapting. "
                 </em>
               </Typography>
             </div>

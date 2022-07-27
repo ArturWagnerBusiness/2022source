@@ -5,10 +5,8 @@ export default class SimpleGames extends Component {
   render() {
     return (
       <div className="SimpleGames">
-        <Typography variant="h4" data-aos="fade-down">
-          Javascript/Electron VS Unity/C#
-        </Typography>
-        <Typography data-aos="fade-right">
+        <Typography variant="h4">Javascript/Electron VS Unity/C#</Typography>
+        <Typography>
           In between 2019 and 2020 I wanted to see what I would be able to do
           with some game development. I developed 2 small games which are
           playable in a browser. Before I talk about them, you can find them at
@@ -20,7 +18,7 @@ export default class SimpleGames extends Component {
         </Typography>
         <br />
         <Grid container spacing={3}>
-          <Grid item container xs={6} spacing={3} data-aos="fade-right">
+          <Grid item container xs={6} spacing={3}>
             <Grid item xs={6}>
               <img
                 style={{
@@ -51,7 +49,7 @@ export default class SimpleGames extends Component {
               </Typography>
             </Grid>
           </Grid>
-          <Grid item container xs={6} spacing={3} data-aos="fade-left">
+          <Grid item container xs={6} spacing={3}>
             <Grid item xs={6}>
               <Typography>
                 The second one was "Rise of Selior" which was developed using

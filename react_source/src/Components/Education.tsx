@@ -18,7 +18,7 @@ export default class Education extends Component {
             <TimelineOppositeContent>
               <Typography variant="h6">
                 <strong>
-                  (Current){" "}
+                  (1st Honor){" "}
                   <Link href="https://www.kingston.ac.uk">
                     Kingston University
                   </Link>{" "}
@@ -42,6 +42,11 @@ export default class Education extends Component {
                   During the <em>second year</em> I was placed in pre-determined
                   teams to create a fully working site for "cheese enthusiasts".
                   Using html/css/js for front-end and php/mysql for back-end.
+                  <br />
+                  Finally being given an opportunity to create a final year
+                  project where I was able to create an website that would
+                  integrate university's systems to give students the
+                  possibility to improve their learning.
                 </Typography>
               </Paper>
             </TimelineContent>

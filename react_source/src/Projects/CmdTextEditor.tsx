@@ -5,10 +5,10 @@ export default class CmdTextEditor extends Component {
   render() {
     return (
       <div className="CmdTextEditor">
-        <Typography variant="h4" data-aos="fade-down">
+        <Typography variant="h4">
           Command prompt text editor for Windows
         </Typography>
-        <Typography data-aos="fade-right">
+        <Typography>
           If you already checked{" "}
           <Link href="https://arturwagnerbusiness.github.io/2018source/">
             my site from 2018/2019
@@ -22,16 +22,12 @@ export default class CmdTextEditor extends Component {
         </Typography>
         <br />
         <img
-          data-aos="fade-left"
           src="/images/cmd-on-site.png"
           width="100%"
           alt="terminal file editor on the website"
         />
         <ButtonGroup>
-          <Button
-            data-aos="fade-left"
-            href="https://github.com/ArturWagnerBusiness/CMD"
-          >
+          <Button href="https://github.com/ArturWagnerBusiness/CMD">
             <strong>Source code</strong>
           </Button>
         </ButtonGroup>

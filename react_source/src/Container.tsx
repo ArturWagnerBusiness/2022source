@@ -83,7 +83,7 @@ export default class Container extends Component {
               <Contact />
             </div>
             <div className="container center">
-              <p>Last update on 14th July 2021</p>
+              <p>Last update on 27th July 2022</p>
             </div>
             <br />
           </Box>

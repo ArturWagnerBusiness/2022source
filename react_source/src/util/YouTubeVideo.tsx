@@ -17,7 +17,6 @@ export default class YouTubeVideo extends Component<prop, {}> {
       >
         <div className="video">
           <iframe
-            data-aos="fade-left"
             src={this.props.url}
             title="YouTube video player"
             frameBorder="0"

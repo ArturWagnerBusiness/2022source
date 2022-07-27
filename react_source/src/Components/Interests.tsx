@@ -10,7 +10,7 @@ export default class Interests extends Component {
           textAlign: "center",
         }}
       >
-        <Typography data-aos="fade-down">
+        <Typography data-aos="flip-left">
           During my A-levels I learned a few piano pieces. <br /> I uploaded 2
           of them onto YouTube.
         </Typography>

@@ -12,6 +12,8 @@ import CodeIcon from "@material-ui/icons/Code";
 import AlternateEmailIcon from "@material-ui/icons/AlternateEmail";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import BuildRoundedIcon from "@material-ui/icons/BuildRounded";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import ReorderIcon from "@material-ui/icons/Reorder";
 export default class Contact extends Component {
   state = {
     open: false,
@@ -55,6 +57,34 @@ export default class Contact extends Component {
           <Grid key={2} item>
             <Button
               className="interactive"
+              href="https://www.linkedin.com/in/arturwagnerbusiness/"
+              data-aos="flip-left"
+              variant="outlined"
+              color="inherit"
+              startIcon={<LinkedInIcon />}
+              size="large"
+            >
+              <Typography variant="h5">Linkedin Profile</Typography>
+            </Button>
+          </Grid>
+
+          <Grid key={3} item>
+            <Button
+              className="interactive"
+              href="https://stackoverflow.com/users/9494053/artur-wagner/"
+              data-aos="flip-left"
+              variant="outlined"
+              color="inherit"
+              startIcon={<ReorderIcon />}
+              size="large"
+            >
+              <Typography variant="h5">StackOverflow Profile</Typography>
+            </Button>
+          </Grid>
+
+          <Grid key={4} item>
+            <Button
+              className="interactive"
               data-aos="flip-left"
               variant="outlined"
               color="inherit"
@@ -87,9 +117,7 @@ export default class Contact extends Component {
           </DialogTitle>
           <DialogContent>
             <DialogContentText data-aos="fade-right" variant="h6">
-              <strong>
-                Email: arturwagner@yahoo.com <br /> Mobile: 07467125666
-              </strong>
+              <strong>Email: arturwagner@yahoo.com</strong>
             </DialogContentText>
           </DialogContent>
         </Dialog>
