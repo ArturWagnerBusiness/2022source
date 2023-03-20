@@ -25,7 +25,7 @@ export default class SimpleGames extends Component {
                   width: "100%",
                   maxWidth: "320px",
                 }}
-                src="/images/game-dau.png"
+                src="images/game-dau.png"
                 alt="Game Darkness around us"
               />
               <br />
@@ -67,7 +67,7 @@ export default class SimpleGames extends Component {
                   width: "100%",
                   maxWidth: "269px",
                 }}
-                src="/images/game-ros.png"
+                src="images/game-ros.png"
                 alt="Game Rise of Salior"
               />
               <br />

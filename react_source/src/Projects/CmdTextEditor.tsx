@@ -22,7 +22,7 @@ export default class CmdTextEditor extends Component {
         </Typography>
         <br />
         <img
-          src="/images/cmd-on-site.png"
+          src="images/cmd-on-site.png"
           width="100%"
           alt="terminal file editor on the website"
         />

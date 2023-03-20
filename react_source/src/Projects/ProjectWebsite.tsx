@@ -19,7 +19,7 @@ export default class ProjectWebsite extends Component {
         </Typography>
         <br />
         <img
-          src="/images/2020source-home.jpg"
+          src="images/2020source-home.jpg"
           alt="2020 website"
           width="100%"
         />
@@ -46,7 +46,7 @@ export default class ProjectWebsite extends Component {
         </Typography>
         <br />
         <img
-          src="/images/2018source-home.jpg"
+          src="images/2018source-home.jpg"
           alt="2020 website"
           width="100%"
         />
@@ -69,7 +69,7 @@ export default class ProjectWebsite extends Component {
         </Typography>
         <br />
         <img
-          src="/images/2018source-loadmore.jpg"
+          src="images/2018source-loadmore.jpg"
           alt="2020 website"
           width="100%"
         />

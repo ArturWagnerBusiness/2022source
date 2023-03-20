@@ -39,7 +39,7 @@ export default class Hero extends Component {
             </div>
           </div>
           <div className="parallax">
-            <img src="/images/unsplash-keyboard (3).jpg" alt="" />
+            <img src="images/unsplash-keyboard (3).jpg" alt="" />
           </div>
         </div>
       </div>
